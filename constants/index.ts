@@ -60,12 +60,12 @@ export const Skill_data = [    {
     },
     {
       name: "facebook",
-      src: "/facebook.svg",
+      src: "/Facebook.svg",
       url: "https://www.facebook.com/",
     },
     {
     name: "discord",
-    src: "/discord.svg",
+    src: "/Discord.svg",
     url: "https://discord.com/channels/1180472540292984863/1180472540292984865",
   },
   ];
