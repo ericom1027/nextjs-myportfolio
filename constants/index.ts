@@ -59,12 +59,12 @@ export const Skill_data = [    {
       url: "https://www.instagram.com/hackweiser_27/",
     },
     {
-      name: "Facebook",
+      name: "facebook",
       src: "/facebook.svg",
       url: "https://www.facebook.com/",
     },
     {
-    name: "Discord",
+    name: "discord",
     src: "/discord.svg",
     url: "https://discord.com/channels/1180472540292984863/1180472540292984865",
   },
