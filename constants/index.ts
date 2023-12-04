@@ -65,7 +65,7 @@ export const Skill_data = [    {
     },
     {
     name: "Discord",
-    src: "/discord.png",
+    src: "/discord.svg",
     url: "https://discord.com/channels/1180472540292984863/1180472540292984865",
   },
   ];
