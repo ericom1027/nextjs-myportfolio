@@ -23,7 +23,7 @@ const Projects = () => {
         />
         <ProjectCard
           src="/Payroll.jpg"
-          title="Payroll System"
+          title="C# Payroll System"
           description="a software application businesses used to manage and automate the process of paying employees."
         />
       </div>
