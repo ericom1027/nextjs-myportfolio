@@ -18,7 +18,7 @@ const Projects = () => {
         />
         <ProjectCard
           src="/connect-4.jpg"
-          title="Create-React.js-Connect-4 Game"
+          title="React.js-Connect-4 Game"
           description="Connect Four is a two-player strategy game where the objective is to be the first to form a line of four of your own discs horizontally, vertically, or diagonally on a grid."
         />
         <ProjectCard
