@@ -18,7 +18,7 @@ const HeroContent = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
           >
             <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
-            <h1 className='Welcome-text text-[13px]'>Web Developer</h1>
+            <h1 className='Welcome-text text-[13px]'>Full Stack Web Developer</h1>
 
           </motion.div>
           <motion.div
@@ -38,7 +38,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className='text-lg text-gray-400 my-5 max-w [600px]'
           >
-            I&apos;am Ericson Web Developer with experience in Website,
+            I&apos;am Ericson Full-Stack Web Developer with experience in Website,
           Mobile,and Front-End & Back-End Developer. Check out my projects and skills.
          </motion.p>
           <TabContent />
