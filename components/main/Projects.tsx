@@ -17,7 +17,7 @@ const Projects = () => {
           description="used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features."
         />
         <ProjectCard
-          src="/POS.jpg"
+          src="/pos.JPG"
           title="Point of Sales"
           description="Point of Sale (POS) system using the MERN stack typically refers to a web-based application built using MongoDB, Express.js, React.js, and Node.js."
         />
