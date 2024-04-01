@@ -17,9 +17,9 @@ const Projects = () => {
           description="used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features."
         />
         <ProjectCard
-          src="/connect-4.jpg"
-          title="React.js-Connect-4 Game"
-          description="Connect Four is a two-player strategy game where the objective is to be the first to form a line of four of your own discs horizontally, vertically, or diagonally on a grid."
+          src="/POS.jpg"
+          title="Point of Sales"
+          description="Point of Sale (POS) system using the MERN stack typically refers to a web-based application built using MongoDB, Express.js, React.js, and Node.js."
         />
         <ProjectCard
           src="/Payroll.jpg"
