@@ -148,6 +148,12 @@ position: absolute;
   
  }
 
+ #welcometxt {
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 html {
   scroll-behavior: smooth;
 }
