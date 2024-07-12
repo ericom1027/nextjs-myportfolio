@@ -128,8 +128,8 @@ export const Skill_data = [    {
     },
 
     {
-      skill_name: "Xampp",
-      Image: "/xampp.png",
+      skill_name: "Postman",
+      Image: "/postman.png",
       width: 70,
       height: 70,
     },
@@ -137,7 +137,14 @@ export const Skill_data = [    {
     ];
 
     export const tools_skill = [
-     {
+ {
+        skill_name: "AWS",
+        Image: "/AWS.png",
+        width: 70,
+        height: 70,  
+       },
+    
+       {
       skill_name: "git",
       Image: "/git.png",
       width: 70,
@@ -165,8 +172,7 @@ export const Skill_data = [    {
       width: 70,
       height: 70,  
      },
-
-   ];
+];
   
 
   

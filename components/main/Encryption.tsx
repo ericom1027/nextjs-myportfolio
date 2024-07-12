@@ -8,7 +8,7 @@ import Image from "next/image";
 const Encryption = () => {
   return (
     <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
-      <div className="absolute w-auto h-auto top-0 z-[5]">
+      <div id="text-performance" className="absolute w-auto h-auto top-0 z-[5]">
         <motion.div
           variants={slideInFromTop}
           className="text-[40px] font-medium text-center text-gray-200"
@@ -22,9 +22,10 @@ const Encryption = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
+      <div id="img-lock" className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
           <Image
+            id="locktop-img"
             src="/LockTop.png"
             alt="Lock top"
             width={50}
@@ -32,6 +33,7 @@ const Encryption = () => {
             className="w-[50px] translate-y-5 transition-all duration-200 group-hover:translate-y-11"
           />
           <Image
+            id="lockMain-img"
             src="/LockMain.png"
             alt="Lock Main"
             width={70}
@@ -45,12 +47,12 @@ const Encryption = () => {
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div className="roboto text-[20px] font-medium text-center text-gray-300">
+        <div id="secure-data" className="roboto text-[20px] font-medium text-center text-gray-300">
           Secure your data with end-to-end encryption
         </div>
       </div>
 
-      <div className="w-full flex items-start justify-center absolute">
+      <div id="video-encryption" className="w-full flex items-start justify-center absolute">
         <video
           loop
           muted

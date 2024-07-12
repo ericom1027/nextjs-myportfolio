@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && mv out build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,9 +13,10 @@
     "@react-three/drei": "^9.89.0",
     "@react-three/fiber": "^8.15.11",
     "bootstrap": "^5.3.2",
+    "dotenv": "^16.4.5",
     "framer-motion": "^10.6.8",
     "mongoose": "^8.0.2",
-    "next": "^14.1.0",
+    "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

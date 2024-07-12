@@ -13,10 +13,10 @@ const Skills = () => {
       <section
         id="skills"
         className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-[500px]"
-        style={{ transform: "scale(0.9" }}
+        style={{ transform: "scale(0.9", top: "-250px" }}
       >
         <SkillText />
-        <div className="flex flex-row justify-around flex-wrap gap-5 items-center">
+        <div id="img-skills" className="flex flex-row justify-around flex-wrap gap-5 items-center">
           {Skill_data.map((image, index) => (
             <SkillDataProvider
               key={index}
@@ -28,7 +28,7 @@ const Skills = () => {
           ))}
         </div>
   
-        <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
+        <div id="img-skills" className="flex flex-row justify-around flex-wrap gap-5 items-center">
           {Backend_skill.map((image, index) => (
             <SkillDataProvider
               key={index}
@@ -40,7 +40,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="flex flex-row justify-around flex-wrap  gap-5 items-center">
+        <div id="img-skills" className="flex flex-row justify-around flex-wrap  gap-5 items-center">
           {tools_skill.map((image, index) => (
             <SkillDataProvider
               key={index}
@@ -52,7 +52,7 @@ const Skills = () => {
           ))}
         </div>
         
-      <div className=" w-full h-full absolute" style={{ marginTop: '60vh' }}>
+      <div className=" w-full h-full absolute" style={{ marginTop: '50vh' }}>
       <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
       <video
             className="w-full h-full "

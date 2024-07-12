@@ -4,8 +4,6 @@ import './globals.css'
 import StarsCanvas from "@/components/main/StarsBackground";
 import Navbar from "@/components/main/Navbar";
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

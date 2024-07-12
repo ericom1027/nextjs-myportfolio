@@ -42,10 +42,8 @@ export default function ContactForm() {
 
   return (
     <>
-      <form
-       id="contactus"
-       
-        onSubmit={handleSubmit}
+      <form 
+       onSubmit={handleSubmit}
         className="py-4 z-10 mt-4 border-t flex flex-col gap-5 relative"
       >
         <div>
@@ -91,7 +89,7 @@ export default function ContactForm() {
       {error &&
        error.map((e, index) => (
     <div
-      key={index} // Assigning index as a key (not ideal, use a unique identifier if available)
+      key={index} 
       className={`${
         success ? "text-green-800" : "text-red-600"
       } px-5 py-2`}
