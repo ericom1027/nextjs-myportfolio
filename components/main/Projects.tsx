@@ -14,7 +14,7 @@ const Projects = () => {
       <ProjectCard
           src="/BMS.JPG"
           title="Barangay Management System"
-          description="(BMS) is designed to efficiently manage and automate various administrative functions of a barangay (a local government unit in the Philippines)."
+          description="(BMS) is designed to efficiently manage and automate various administrative functions of a barangay (a local government unit in the Philippines) built using Sequelize, Twilio for SMS Notification, MySQL, React.js Node.js React.js Material UI React Bootstrap."
         />
         <ProjectCard
           src="/pos.jpg"
