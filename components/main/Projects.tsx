@@ -12,7 +12,7 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
       <ProjectCard
-          src="/BMS.jpg"
+          src="/BMS.JPG"
           title="Barangay Management System"
           description="(BMS) is designed to efficiently manage and automate various administrative functions of a barangay (a local government unit in the Philippines)."
         />
