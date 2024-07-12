@@ -18,7 +18,7 @@ const HeroContent = () => {
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
           >
             <SparklesIcon className='text-[#00ff00] mr-[10px] h-5 w-5' />
-            <h1 className='Welcome-text text-[12px]'>Full Stack Web Developer</h1>
+            <h1 id='welcometxt'>Full Stack Web Developer</h1>
         </motion.div>
           <motion.div
           id="txt-providing"
@@ -39,8 +39,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className='text-lg text-gray-400 my-5 max-w [600px]'
           >
-            I&apos;am Ericson Full-Stack Web Developer with experience in Website,
-          Mobile,and Front-End & Back-End Developer. Check out my projects and skills.
+            I&apos;am Ericson as a full-stack web developer, I bring a comprehensive skill set to the table, encompassing both front-end and back-end technologies. Proficient in HTML, CSS, and JavaScript, I specialize in crafting engaging and responsive user interfaces. Leveraging frameworks such as React and Node.js, I design and implement dynamic features that enhance the user experience. On the back end, I am adept at server-side programming in languages like JavaScript (Node.js), C# utilizing frameworks such as Express.js.
          </motion.p>
           <TabContent />
           <DownloadResume /> 

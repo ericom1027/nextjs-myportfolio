@@ -162,11 +162,23 @@ html {
   }
  
   #skills {
-    margin-top: 200px;
+    margin-top: 400px;
+    transform: scale(0.8);
   }
 
+  #welcometxt {
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  #img-profile {
+    margin-top: -200px;
+    
+   }
+
   #secure-data {
-    margin-top: -300px;
+    margin-top: -500px;
   
     }
      #text-performance {
@@ -180,6 +192,14 @@ html {
   .tab-titles {
     flex-direction: column; 
   }
+
+  #video-encryption {
+    margin-top: -500px;
+  }
+
+  #projects {
+    margin-top: -400px;
+   }
 
    input,
    textarea,
@@ -211,7 +231,8 @@ html {
 
 @media only screen and (max-width: 414px) {
   #skills {
-    margin-top: 200px;
+    margin-top: 350px;
+    transform: scale(0.6);
  } 
 
  .tab-contents {
@@ -244,17 +265,17 @@ html {
   }
 
  #secure-data {
-  margin-top: -500px;
+  margin-top: -700px;
   font-size: 15px;
   }
 
  
   #text-performance {
-    margin-top: 40px
+    margin-top: -200px
   }
 
   #img-lock {
-    margin-top: -300px;
+    margin-top: -710px;
   }
 
   #locktop-img {
@@ -268,7 +289,7 @@ html {
   }
 
   #video-encryption {
-    margin-top: -400px;
+    margin-top: -800px;
   }
 
   #motion-making {
@@ -290,19 +311,35 @@ html {
 
  #motion-p {
   font-size: 12px;
-  
- }
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  }
+
+ 
+  #welcometxt {
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+  }
 
  #img-profile {
   display: none;
  }
 
  #projects {
-  margin-top: -500px;
+  margin-top: -700px;
  }
 
  #contactus {
   margin-top: 50px;
+ }
+
+ #btn-download {
+  font-size: 12px;
+  width: 50%;
  }
 
 }

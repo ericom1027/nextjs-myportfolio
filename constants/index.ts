@@ -165,7 +165,6 @@ export const Skill_data = [    {
       width: 70,
       height: 70,  
      },
-
      {
       skill_name: "sublime",
       Image: "/sublime.png",
