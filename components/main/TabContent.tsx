@@ -10,7 +10,8 @@ const TabsComponent = () => {
 
   return (
     <div>
-      <div className="tab-titles inline-block py-2 text-white relative text-center gap-5">
+      {/* <div className="tab-titles inline-block py-2 text-white relative text-center gap-5"></div> */}
+      <div className="tab-titles">
       <p 
           className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
           onClick={() => opentab('education')}
@@ -21,7 +22,7 @@ const TabsComponent = () => {
           className={`tab-links ${activeTab === 'trainings' ? 'active-link' : ''}`}
           onClick={() => opentab('trainings')}
         >
-          Trainings & Certificates
+        Trainings & Certificates
         </p>
          <p
           className={`tab-links ${activeTab === 'experience' ? 'active-link' : 'experience'}`}
