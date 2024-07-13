@@ -112,7 +112,7 @@ color: #fff;
 position: absolute;
 }
 
-.tab-contents{
+.tab-contents {
   display: none;
 }
 
@@ -137,6 +137,7 @@ position: absolute;
 
 .tab-contents {
   display: block;
+  margin-top: 40px;
 }
 
 #skills {
