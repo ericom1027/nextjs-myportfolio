@@ -411,7 +411,7 @@ html {
    }
 
    #img-skills {
-    height: 20rem;
+    height: 30rem;
     width: 100vw;
    }
 
@@ -451,18 +451,7 @@ html {
 
 }
 
-@media only screen and (max-width: 320px) {
-  #skills {
-    margin-top: 600px;
-    transform: scale(0.6);
-  }
 
-
- #btn-download {
-    font-size: 10px;
-    width: 50%;
-   }
-}
 
 
 
