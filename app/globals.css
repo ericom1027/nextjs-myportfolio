@@ -330,7 +330,6 @@ html {
   font-size: 15px;
   }
 
- 
   #text-performance {
     margin-top: -200px
   }
@@ -380,7 +379,6 @@ html {
   
 }
 
- 
   #welcometxt {
     color: white;
     font-size: 12px;
@@ -409,6 +407,36 @@ html {
 @media only screen and (max-width: 400px) {
   #skills {
     margin-top: 250px;
+    transform: scale(0.8);
+   }
+
+   #img-skills {
+    height: 20rem;
+    width: 100vw;
+   }
+
+ 
+
+  #text-performance {
+    margin-top: 80px;
+ }
+
+  #secure-data {
+  margin-top: -900px;
+  } 
+
+  #locktop-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #lockMain-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #video-encryption {
+    margin-top: -800px;
   }
 
   #motion-p {
@@ -429,7 +457,8 @@ html {
     transform: scale(0.6);
   }
 
-  #btn-download {
+
+ #btn-download {
     font-size: 10px;
     width: 50%;
    }
