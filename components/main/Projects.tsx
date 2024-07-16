@@ -43,6 +43,12 @@ const Projects = () => {
            description="ChatBot is an interactive tool designed to assist users in creating and refining their design concepts within Figma. It provides real-time feedback on design elements, suggests improvements based on best practices, and offers creative ideas tailored to user preferences."
         />
 
+        <ProjectCard 
+           src="/greatwaves.JPG"
+           title="Greatwaves Website"
+            description="The Greatwaves Website, built with HTML, CSS, JavaScript, and Bootstrap, offers a robust solution for handling customer support inquiries and tracking issues."
+        />
+
          <ProjectCard 
            src="/Ticketing.JPG"
            title="Ticketing System"
