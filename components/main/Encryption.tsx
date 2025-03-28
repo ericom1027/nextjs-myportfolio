@@ -23,7 +23,10 @@ const Encryption = () => {
         </motion.div>
       </div>
 
-      <div id="img-lock" className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
+      <div
+        id="img-lock"
+        className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto"
+      >
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
           <Image
             id="locktop-img"
@@ -43,17 +46,26 @@ const Encryption = () => {
           />
         </div>
 
-        <div id="txt-encryption" className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]">
+        <div
+          id="txt-encryption"
+          className="Welcome-box px-[15px] py-[4px] z-[20] border my-[20px] border-[#7042f88b] opacity-[0.9]"
+        >
           <h1 className="Welcome-text text-[12px]">Encryption</h1>
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div id="secure-data" className="roboto text-[20px] font-medium text-center text-gray-300">
+        <div
+          id="secure-data"
+          className="roboto text-[20px] font-medium text-center text-gray-300"
+        >
           Secure your data with end-to-end encryption
         </div>
       </div>
 
-      <div id="video-encryption" className="w-full flex items-start justify-center absolute">
+      <div
+        id="video-encryption"
+        className="w-full flex items-start justify-center absolute"
+      >
         <video
           loop
           muted

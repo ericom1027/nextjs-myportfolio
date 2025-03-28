@@ -1,67 +1,95 @@
+"use client";
+
 import { Socials } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div id="navbar" className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#Home"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+        <a href="#Home" className="h-auto w-auto flex flex-row items-center">
           <Image
-            id="logo"
-            src="/NavLogo.png"
+            src="/logo.png"
             alt="logo"
             width={70}
             height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer transition-transform duration-300 hover:scale-110 drop-shadow-[0_5px_10px_rgba(42,14,97,0.7)] hover:drop-shadow-[0_10px_20px_rgba(42,14,97,1)]"
           />
-
-          <span id="text-emd" className="font-bold ml-[10px] hidden md:block w-[40px] text-gray-300" >
+          <span className="hidden lg:inline-block font-extrabold text-transparent text-lg uppercase tracking-widest bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 bg-clip-text drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">
             EMD
           </span>
         </a>
 
-        <div id="responsive-container" className="w-[720px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div id="responsive-links" className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
-            </a>
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
-            <a href="#projects" className="cursor-pointer">
-              Projects
-            </a>
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-grey"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
 
-            <a href="#contactus" className="cursor-pointer">
-              Contact 
-            </a>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex w-[720px] h-full items-center justify-between md:mr-20">
+          <div className="flex items-center justify-between w-full h-auto md:border md:border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
+            <a href="#about-me">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contactus">Contact</a>
           </div>
         </div>
 
- <div className="flex flex-row gap-5">
-  {Socials.map((social) => (
-    <a
-      key={social.name}
-      href={social.url}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Image
-        src={`/${social.name}.svg`}
-        alt={social.name}
-        key={social.name}
-        width={24}
-        height={24}
-      />
-    </a>
-  ))}
-</div>
- </div>
-  </div>
+        {isOpen && (
+          <div className="absolute top-[65px] left-0 w-full bg-gray-800 text-gray-200 flex flex-col items-center justify-center text-center py-4 md:hidden">
+            <a
+              href="#about-me"
+              className="py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              About me
+            </a>
+            <a href="#skills" className="py-2" onClick={() => setIsOpen(false)}>
+              Skills
+            </a>
+            <a
+              href="#projects"
+              className="py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Projects
+            </a>
+            <a
+              href="#contactus"
+              className="py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </a>
+          </div>
+        )}
+
+        <div className="hidden md:flex flex-row gap-5">
+          {Socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={`/${social.name}.svg`}
+                alt={social.name}
+                width={24}
+                height={24}
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

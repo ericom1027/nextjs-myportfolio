@@ -1,14 +1,14 @@
-import Skills from '@/components/main/Skills'
-import Hero from '@/components/main/Hero'
-import Encryption from '@/components/main/Encryption'
-import Projects from '@/components/main/Projects'
-import Footer from '@/components/main/Footer';
-import Contact from '../components/main/Contact';
+import Skills from "@/components/main/Skills";
+import Hero from "@/components/main/Hero";
+import Encryption from "@/components/main/Encryption";
+import Projects from "@/components/main/Projects";
+import Footer from "@/components/main/Footer";
+import Contact from "../components/main/Contact";
 
 export default function Home() {
   return (
-     <main className='h-full w-full'>
-      <div className='flex flex-col h-[800px] gap-10'>
+    <main className="h-full w-full">
+      <div className="flex flex-col h-[800px] gap-10">
         <Hero />
         <Skills />
         <Encryption />
@@ -16,8 +16,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </div>
-     
-</main>
-  )
+    </main>
+  );
 }
-

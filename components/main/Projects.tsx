@@ -32,27 +32,27 @@ const Projects = () => {
           description="A software application businesses use to manage and automate the process of paying employees. Built using Bunifu UI, C#, MS SQL Server 2014"
         />
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by extending the latest React features. Built using Next.js, React.js, TypeScript, Tailwind, and MongoDB."
+          src="/VQCS.jpg"
+          title="Voters Quick Count System"
+          description="Voters Quick Count System is a web application designed for fast and accurate vote counting in elections. It leverages real-time data updates using Socket.io, ensuring instant result aggregation and monitoring. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), this system provides a scalable and modern solution for election monitoring, making the vote-counting process more efficient and transparent."
         />
 
-        <ProjectCard 
-           src="/ChatBot.JPG"
-           title="Design ChatBot"
-           description="ChatBot is an interactive tool designed to assist users in creating and refining their design concepts within Figma. It provides real-time feedback on design elements, suggests improvements based on best practices, and offers creative ideas tailored to user preferences."
+        <ProjectCard
+          src="/ChatBot.JPG"
+          title="Design ChatBot"
+          description="ChatBot is an interactive tool designed to assist users in creating and refining their design concepts within Figma. It provides real-time feedback on design elements, suggests improvements based on best practices, and offers creative ideas tailored to user preferences."
         />
 
-        <ProjectCard 
-           src="/greatwaves.JPG"
-           title="Greatwaves Website"
-            description="The Greatwaves Website, built with HTML, CSS, JavaScript, and Bootstrap, offers a robust solution for handling customer support inquiries and tracking issues."
+        <ProjectCard
+          src="/greatwaves.JPG"
+          title="Greatwaves Website"
+          description="The Greatwaves Website, built with HTML, CSS, JavaScript, and Bootstrap, offers a robust solution for handling customer support inquiries and tracking issues."
         />
 
-         <ProjectCard 
-           src="/Ticketing.JPG"
-           title="Ticketing System"
-           description="Ticketing System, developed in VB.NET, MS SQL Server 2014, Stored Procedures, Metro Framework, provides an efficient platform for managing customer support requests and issue tracking. The system allows users to create, view, and manage tickets seamlessly, enhancing communication between support staff. Features include ticket categorization, status tracking, user assignment, and automated notifications for updates."
+        <ProjectCard
+          src="/Ticketing.JPG"
+          title="Ticketing System"
+          description="Ticketing System, developed in VB.NET, MS SQL Server 2014, Stored Procedures, Metro Framework, provides an efficient platform for managing customer support requests and issue tracking. The system allows users to create, view, and manage tickets seamlessly, enhancing communication between support staff. Features include ticket categorization, status tracking, user assignment, and automated notifications for updates."
         />
       </div>
     </div>
