@@ -9,7 +9,7 @@ import {
 import { SparklesIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import DownloadResume from "@/components/main/download";
-import TabContent from "../main/TabContent";
+
 const HeroContent = () => {
   return (
     <motion.div
@@ -25,7 +25,8 @@ const HeroContent = () => {
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#00ff00] mr-[10px] h-5 w-5" />
+          <SparklesIcon className="text-white opacity-75 mr-[10px] h-5 w-5" />
+
           <h1 id="welcometxt">Full Stack Web Developer</h1>
         </motion.div>
         <motion.div
@@ -45,20 +46,20 @@ const HeroContent = () => {
         <motion.p
           id="motion-p"
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w [600px]"
+          className="text-lg text-gray-400 my-5 max-w-[600px] text-justify leading-relaxed"
         >
           I&apos;m Ericson, a Full-Stack Web Developer with expertise in both
           front-end and back-end technologies. I specialize in crafting engaging
           and responsive user interfaces using HTML, CSS, and JavaScript, along
-          with frameworks like React and Vue.js. On the back end, I develop
-          efficient and scalable server-side applications using Node.js
+          with frameworks like React.js, Vue.js, and Next.js. On the back end, I
+          develop efficient and scalable server-side applications using Node.js
           (Express.js) and C#. With a keen eye for user experience, performance
           optimization, and modern development practices, I build dynamic and
           high-performing web solutions that enhance usability and
           functionality.
         </motion.p>
+
         <DownloadResume />
-        <TabContent />
       </div>
       <motion.div
         variants={slideInFromRight(0.8)}

@@ -26,19 +26,39 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-grey"
+          className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          {isOpen ? <FiX size={24} /> : <FiMenu color="white" size={24} />}
         </button>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex w-[720px] h-full items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto md:border md:border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contactus">Contact</a>
+            <a
+              href="#about-me"
+              className="hover:text-[#7042f8] transition-colors duration-300"
+            >
+              About me
+            </a>
+            <a
+              href="#skills"
+              className="hover:text-[#7042f8] transition-colors duration-300"
+            >
+              Skills
+            </a>
+            <a
+              href="#projects"
+              className="hover:text-[#7042f8] transition-colors duration-300"
+            >
+              Projects
+            </a>
+            <a
+              href="#contactus"
+              className="hover:text-[#7042f8] transition-colors duration-300"
+            >
+              Contact
+            </a>
           </div>
         </div>
 
@@ -46,24 +66,28 @@ const Navbar = () => {
           <div className="absolute top-[65px] left-0 w-full bg-gray-800 text-gray-200 flex flex-col items-center justify-center text-center py-4 md:hidden">
             <a
               href="#about-me"
-              className="py-2"
+              className="py-2 hover:text-gray-400 transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               About me
             </a>
-            <a href="#skills" className="py-2" onClick={() => setIsOpen(false)}>
+            <a
+              href="#skills"
+              className="py-2 hover:text-gray-400 transition-colors duration-200"
+              onClick={() => setIsOpen(false)}
+            >
               Skills
             </a>
             <a
               href="#projects"
-              className="py-2"
+              className="py-2 hover:text-gray-400 transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </a>
             <a
               href="#contactus"
-              className="py-2"
+              className="py-2 hover:text-gray-400 transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               Contact

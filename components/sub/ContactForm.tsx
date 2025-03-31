@@ -1,49 +1,47 @@
 "use client";
 
 import { useState } from "react";
-
+import Swal from "sweetalert2";
 
 export default function ContactForm() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState([]);
-  const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    console.log("Full name: ", fullname);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
 
     const res = await fetch("api/contact", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({
-        fullname,
-        email,
-        message,
-      }),
+      body: JSON.stringify({ fullname, email, message }),
     });
 
     const { msg, success } = await res.json();
     setError(msg);
-    setSuccess(success);
 
     if (success) {
       setFullname("");
       setEmail("");
       setMessage("");
+
+      Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent successfully.",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
     }
   };
 
   return (
-    <>
-      <form 
-       onSubmit={handleSubmit}
+    <div className="border border-white p-5 rounded-lg">
+      <h3>Get in Touch!</h3>
+      <form
+        onSubmit={handleSubmit}
         className="py-4 z-10 mt-4 border-t flex flex-col gap-5 relative"
       >
         <div>
@@ -54,13 +52,12 @@ export default function ContactForm() {
             type="text"
             id="fullname"
             placeholder="Your Name"
-           
           />
         </div>
 
         <div>
           <label htmlFor="email">Email</label>
-          <input 
+          <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="text"
@@ -80,24 +77,13 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        <button className=" button-primary p-3 text-white font-bold" type="submit">
+        <button
+          className="button-primary p-3 text-white font-bold"
+          type="submit"
+        >
           Send
         </button>
       </form>
-
-      <div className="bg-slate-100 flex flex-col">
-      {error &&
-       error.map((e, index) => (
-    <div
-      key={index} 
-      className={`${
-        success ? "text-green-800" : "text-red-600"
-      } px-5 py-2`}
-    >
-      {e}
-            </div>
-          ))}
-      </div>
-    </>
+    </div>
   );
 }

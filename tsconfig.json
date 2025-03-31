@@ -20,9 +20,18 @@
     ],
     "paths": {
       "@/*": ["./*"]
-    },
-
-    },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/main/ContactForm.jsx", "components/sub/ContactForm.tsx"],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/main/ContactForm.jsx",
+    "components/sub/ContactForm.tsx",
+    "app/api/route.js",
+    "app/api/like.js",
+    "app/models/contact.js"
+  ],
   "exclude": ["node_modules"]
 }

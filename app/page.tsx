@@ -1,6 +1,5 @@
 import Skills from "@/components/main/Skills";
 import Hero from "@/components/main/Hero";
-import Encryption from "@/components/main/Encryption";
 import Projects from "@/components/main/Projects";
 import Footer from "@/components/main/Footer";
 import Contact from "../components/main/Contact";
@@ -11,7 +10,6 @@ export default function Home() {
       <div className="flex flex-col h-[800px] gap-10">
         <Hero />
         <Skills />
-        <Encryption />
         <Projects />
         <Contact />
         <Footer />
