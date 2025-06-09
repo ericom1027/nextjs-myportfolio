@@ -52,7 +52,7 @@ const Projects = () => {
         <ProjectCard
           src="/RMS.JPG"
           title="Rental Management System"
-          description="Rental Management System – A full-stack web application built with Quasar Framework, Pinia, Express.js, and MongoDB. It simplifies the management of tenants, rentals, due dates, and payments. Includes authentication and a dashboard for real-time monitoring."
+          description="Rental Management System A full-stack web application built with Quasar Framework, Pinia, Express.js, and MongoDB. It simplifies the management of tenants, rentals, due dates, and payments. Includes authentication and a dashboard for real-time monitoring."
         />
       </div>
     </div>
