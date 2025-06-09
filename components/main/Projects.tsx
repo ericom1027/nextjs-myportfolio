@@ -50,9 +50,9 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="/Ticketing.JPG"
-          title="Ticketing System"
-          description="Ticketing System, developed in VB.NET, MS SQL Server 2014, Stored Procedures, Metro Framework, provides an efficient platform for managing customer support requests and issue tracking. The system allows users to create, view, and manage tickets seamlessly, enhancing communication between support staff. Features include ticket categorization, status tracking, user assignment, and automated notifications for updates."
+          src="/RMS.JPG"
+          title="Rental Management System"
+          description="Rental Management System – A full-stack web application built with Quasar Framework, Pinia, Express.js, and MongoDB. It simplifies the management of tenants, rentals, due dates, and payments. Includes authentication and a dashboard for real-time monitoring."
         />
       </div>
     </div>
