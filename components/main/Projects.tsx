@@ -19,7 +19,7 @@ const Projects = () => {
         <ProjectCard
           src="/pos.jpg"
           title="Point of Sales"
-          description="Point of Sale(POS) system using the MERN Stack typically refers to a web-based application flexible in mobile devices built using MongoDB, Express.js, React.js and Node.js with back-office."
+          description="POS system using Quasar, Express.js, MongoDB, and Pinia — A web-based system responsive on mobile, with real-time sales and inventory tracking, and a back-office dashboard for management."
         />
         <ProjectCard
           src="/EcomWeb.JPG"
